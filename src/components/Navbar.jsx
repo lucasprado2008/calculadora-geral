@@ -1,12 +1,17 @@
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <header>
-      <h1>Calculadora Geral</h1>
+    <header className="navbar">
+      <h1 className="navbar-title">Calculadora Geral</h1>
       <nav>
-        <ul>
+        <ul className="navbar-menu">
           <li>
+            {/* NavLink funciona como um <a>, serve para pegar as informações do link e o conjunto de informações é um objeto
+                to e className são propriedades do componente
+                ({isActive}) é uma desestruturação do objeto para acessar diretamente a propriedade isActive do objeto
+                isActive ? "active" : "" é uma condicional ternária que verifica se isActive é true ou false e retorna "active" ou "" respectivamente
+            */}
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? "active" : "")}
@@ -15,11 +20,6 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            {/* NavLink funciona como um <a>, serve para pegar as informações do link e o conjunto de informações é um objeto
-                to e className são propriedades do componente
-                ({isActive}) é uma desestruturação do objeto para acessar diretamente a propriedade isActive do objeto
-                isActive ? "active" : "" é uma condicional ternária que verifica se isActive é true ou false e retorna "active" ou "" respectivamente
-            */}
             <NavLink
               to="/temperatura"
               className={({ isActive }) => (isActive ? "active" : "")}

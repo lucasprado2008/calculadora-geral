@@ -24,7 +24,7 @@ function Distancia() {
     <section className="calc-page">
       <h2>Conversor de Km para Milhas</h2>
       <form onSubmit={converterMilhas} className="form">
-        <label htmlFor="km">Kilômetros:</label>
+        <label htmlFor="km">Quilômetros:</label>
         <input
           id="km"
           type="number"
@@ -37,7 +37,7 @@ function Distancia() {
       {distanciaMilhas !== null && (
         <div className="results">
           <p>
-            Milhas:<strong>{formatarNumero(distanciaMilhas)}</strong>
+            Milhas: <strong>{formatarNumero(distanciaMilhas)}mi</strong>
           </p>
         </div>
       )}

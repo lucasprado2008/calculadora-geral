@@ -24,7 +24,7 @@ function Temperatura() {
 
   return (
     <section className="calc-page">
-      <h2>Conversor de Temperaturas</h2>
+      <h2>Celsius para Fahrenheit</h2>
       <form onSubmit={calcularTemp} className="form">
         <label htmlFor="temperatura">Celsius (C°)</label>
         <input

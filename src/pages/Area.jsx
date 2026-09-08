@@ -29,7 +29,7 @@ function Area() {
     <section className="calc-page">
       <h2>Calcular Área</h2>
       <form onSubmit={calcArea} className="form">
-        <label htmlFor="largura">Largura</label>
+        <label htmlFor="largura">Largura (m)</label>
         <input
           id="largura"
           type="number"
@@ -37,7 +37,7 @@ function Area() {
           onChange={(e) => setLargura(e.target.value)}
         />
 
-        <label htmlFor="comprimento">Comprimento</label>
+        <label htmlFor="comprimento">Comprimento (m)</label>
         <input
           id="comprimento"
           type="number"

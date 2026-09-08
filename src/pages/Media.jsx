@@ -62,7 +62,7 @@ function Media() {
       {media !== null && (
         <div className="results">
           <p>
-            Média:<strong>{formatarNumero(media)}</strong>
+            Média: <strong>{formatarNumero(media)}</strong>
           </p>
         </div>
       )}

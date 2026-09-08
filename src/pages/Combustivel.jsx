@@ -12,7 +12,7 @@ function Combustivel() {
     const valorDistancia = parseFloat(distancia);
     const combustivelGasto = parseFloat(combustivel);
 
-    if (isNaN(distancia) || isNaN(combustivel)) {
+    if (isNaN(valorDistancia) || isNaN(combustivelGasto)) {
       alert("Os números devem ser preenchidos");
       return;
     }
@@ -28,9 +28,9 @@ function Combustivel() {
 
   return (
     <section className="calc-page">
-      <h2>Calcular Desconto</h2>
+      <h2>Calcular Autonomia</h2>
       <form onSubmit={calcAutonomia} className="form">
-        <label htmlFor="distancia">Distancia:</label>
+        <label htmlFor="distancia">Distância (Km):</label>
         <input
           id="distancia"
           type="number"
@@ -38,7 +38,7 @@ function Combustivel() {
           onChange={(e) => setDistancia(e.target.value)}
         />
 
-        <label htmlFor="combustivel">Combustível Gasto:</label>
+        <label htmlFor="combustivel">Combustível Gasto (L):</label>
         <input
           id="combustivel"
           type="number"

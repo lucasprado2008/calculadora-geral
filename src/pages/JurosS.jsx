@@ -40,7 +40,7 @@ function JurosSimples() {
           onChange={(e) => setCapitalInicial(e.target.value)}
         />
 
-        <label htmlFor="juros">Taxa de Juros:</label>
+        <label htmlFor="juros">Taxa de Juros (ao mês):</label>
         <input
           id="juros"
           type="number"
